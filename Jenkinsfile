@@ -6,10 +6,11 @@ node {
 
         checkout scm
     }
-   /*  stage('Initialize'){
+     stage('Initialize'){
         def dockerHome = tool 'docker'
         env.PATH = "${dockerHome}/bin:${env.PATH}"
     }
+    /*
     docker {
             image 'jenkins/jenkins:latest'
             args '-v /var/run/docker.sock:/var/run/docker.sock'
