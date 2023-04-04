@@ -13,8 +13,13 @@ node {
         } */
 
     stage('Build image') {
-  
-        app = docker.build("vignanbaligari/jenkinstest")
+        steps{ 
+            script{
+                sh 'docker build -t vignanbaligari/jenkinstest .'
+            }
+
+        }
+       // app = docker.build("vignanbaligari/jenkinstest")
        //sh 'docker build -t vignanbaligari/jenkinstest .'
     }
 
