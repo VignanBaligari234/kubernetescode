@@ -5,11 +5,7 @@ node {
       
 
         checkout scm
-    }
-//      stage('Initialize'){
-//         def dockerHome = tool 'docker'
-//         env.PATH = "${dockerHome}/bin:${env.PATH}"
-//     }
+    } 
     /*
     docker {
             image 'jenkins/jenkins:latest'
