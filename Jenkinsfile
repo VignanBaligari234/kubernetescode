@@ -1,8 +1,5 @@
 pipeline{
     agent any
-    tools{
-            docker:'docker_20_10_17'
-        }
     stages {
         stage('Build Docker Image') {
             steps {
